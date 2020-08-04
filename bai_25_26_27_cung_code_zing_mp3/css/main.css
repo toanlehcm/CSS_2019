@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+}
+/* lesson 25 */
+.weekly-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #EEE;
+}
+
+.weekly-item .number {
+    font-size: 20px;
+    padding: 0 8px;
+}
+
+.weekly-item .info {
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.weekly-item .song-title {
+    margin-bottom: 8px;
+}
+
+.weekly-item .singer {
+    font-size: 13px;
+    color: #999;
+}
+
+.weekly-item .view-count {
+    font-size: 13px;
+    color: #999;
+}
+
+/* lesson 26 */
+.album-cover {
+    width: 128px;
+    height: 128px;
+    background-color: #DDD;
+    /* background-image: url(https://via.placeholder.com/128); */
+    background-image: url(https://loremflickr.com/320/240);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.album-cover .overlay {
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 8px;
+    box-sizing: border-box; /*khong lam thay doi kich thuoc khi dung padding*/
+}
+
+/* lesson 27 */
+.album-square {
+    width: 128px;
+    height: 128px;
+    background-color: #DDD;
+    /* background-image: url(https://via.placeholder.com/128); */
+    background-image: url(https://loremflickr.com/320/240);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    color: #FFF;
+}
+
+.album-square .overlay {
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center; /*giua theo truc ngang*/
+    align-items: center; /*theo truc doc*/
+    opacity: 0;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+.album-square:hover .overlay {
+    opacity: 1;
+}
+
+/* lesson 28 */
+.container {
+    display: flex; /*mac dinh theo chieu ngang*/
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    color: #FFF;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+    position: relative;
+    top: 10px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+/* lesson 29 */
+.greenyellow {
+    background-color: greenyellow;
+}
+
+.fixed {
+    position: fixed;
+    right: 10px;
+    /* top: 10px; */
+    bottom: 10px;
+}
+
+/* lesson 30 */
+.container-lesson-30 {
+    width: 300px;
+    height: 300px;
+    background-color: #DDD;
+    position: relative;
+}
+
+.inner-container {
+    width: 200px;
+    height: 200px;
+    background-color: #888;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: #0f517f;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+/* lesson 31 */
+.menu {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu li {
+    padding: 8px 16px;
+}
+
+.menu li:hover {
+    background-color: #EEE;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    background-color: #EEE;
+}

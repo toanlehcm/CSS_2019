@@ -1,0 +1,19 @@
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row; /*mobile first*/
+    }
+
+    .item {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: column; /*desktop first*/
+    }
+
+    .item {
+        flex-grow: 1;
+    }
+}

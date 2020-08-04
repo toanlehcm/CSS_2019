@@ -1,0 +1,20 @@
+/* Css specificity */
+* {
+    color: red;
+}
+
+#p1 {
+    color: #DDD;
+}
+
+.paragraph {
+    color: brown;
+}
+
+p {
+    color: seagreen;
+}
+
+p {
+    color: blue !important;
+}

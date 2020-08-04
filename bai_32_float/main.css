@@ -1,0 +1,46 @@
+.image-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.image-right {
+    float: right;
+    margin-left: 10px;
+}
+
+.menu {
+    float: left;
+}
+
+#menu li {
+    float: left;
+    padding: 8px 16px;
+    background-color: grey;
+}
+
+p {
+    clear: left; /*không muốn bất kỳ gì ở bên trái*/
+}
+
+.header {
+    height: 100px;
+}
+
+.sidebar {
+    float: left;
+    width: 20%;
+}
+
+.main {
+    margin-left: 20%;
+}
+
+.warpper:after {
+    content: ''; /*muon su dung after phai co content*/
+    display: block;
+    clear: both;
+}
+
+.footer {
+    height: 100px;
+}
